@@ -1,5 +1,6 @@
 :root {
   --branding-color: #3e7273;
+  --primary-color: #3b6a6b;
   --heading-font-family: "Comfortaa", cursive;
   --default-font-family: "Space Mono", monospace;
   --secondary-color: white;
@@ -17,14 +18,28 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
+}
+
+h1 {
   font-size: 96px;
+}
+
+h2 {
+  color: var(--branding-color);
+  font-size: 64px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
   background: var(--secondary-color);
   border: 50px solid var(--branding-color);
   text-align: center;
-  color: #3b6a6b;
+  color: var(--primary-color);
   padding: 160px 20px;
 }
 .hero p {
@@ -36,7 +51,6 @@ h6 {
 .hero h2 {
   font-family: var(--heading-font-family);
   font-weight: normal;
-  line-height: 2px;
   font-size: 24px;
 }
 
@@ -47,4 +61,39 @@ h6 {
   font-size: 18px;
   line-height: 27px;
   padding: 15px, 30px;
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--branding-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px, 30px;
+  color: #3b6a6b;
+}
+
+.project-description {
+  padding: 20px 60px;
+}
+
+.image-block {
+  padding-top: 40px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
