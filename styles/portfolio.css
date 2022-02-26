@@ -271,4 +271,8 @@ footer .social-links a:hover {
   footer .email-link {
     font-size: 17px;
   }
+
+  .content-container h1 {
+    font-size: 55px;
+  }
 }
