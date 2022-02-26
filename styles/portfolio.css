@@ -38,7 +38,8 @@ p {
 
 .hero {
   background: var(--secondary-color);
-  border: 50px solid var(--branding-color);
+  border: 20px solid var(--branding-color);
+  border-bottom: none;
   text-align: center;
   color: var(--primary-color);
   padding: 160px 20px;
@@ -53,6 +54,11 @@ p {
   font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 24px;
+}
+
+.background-design {
+  background: var(--secondary-color);
+  border: 20px solid var(--branding-color);
 }
 
 .content-container {
@@ -111,6 +117,44 @@ p {
   padding: 20px 60px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 2px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-right: -40px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 0px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--branding-color);
+  font-weight: 900;
+}
+
+nav li.active a {
+  font-weight: 700;
+}
+
 .image-block {
   padding-top: 40px;
 }
@@ -140,5 +184,10 @@ p {
   .content {
     text-align: center;
     padding: 0px;
+  }
+
+  nav a {
+    font-size: 12px;
+    margin: 0px;
   }
 }
