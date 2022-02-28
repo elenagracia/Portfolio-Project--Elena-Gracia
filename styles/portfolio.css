@@ -24,7 +24,7 @@ h6 {
 
 h1 {
   color: var(--primary-color);
-  font-size: 96px;
+  font-size: 80px;
 }
 
 h2 {
@@ -111,6 +111,14 @@ img {
 .content-container h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
+}
+
+.content-image {
+  margin-top: 40px;
+}
+
+.about-text {
+  margin-right: !imp 50px;
 }
 
 .btn-branding {
@@ -256,7 +264,7 @@ footer .social-links a:hover {
   }
 
   nav a {
-    font-size: 15px;
+    font-size: 13px;
     margin: 0px;
   }
 
@@ -274,5 +282,10 @@ footer .social-links a:hover {
 
   .content-container h1 {
     font-size: 55px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
